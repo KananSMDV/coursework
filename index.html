@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Эвакуатор 24 — Сервис эвакуации автомобилей</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Шапка сайта -->
+  <header>
+    <div class="logo">Эвакуатор 24</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Главная</a></li>
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#prices">Цены</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+        <li><a href="#order">Заявка</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Главный блок -->
+  <section id="home" class="hero">
+    <h1>Быстрая эвакуация автомобилей 24/7</h1>
+    <p>Работаем по городу и области. Приедем в течение 20 минут!</p>
+    <a href="#order" class="btn">Вызвать эвакуатор</a>
+  </section>
+
+  <!-- Услуги -->
+  <section id="services">
+    <h2>Наши услуги</h2>
+    <div class="service-list">
+      <div class="service-item">Эвакуация легковых авто</div>
+      <div class="service-item">Эвакуация внедорожников</div>
+      <div class="service-item">Эвакуация мотоциклов</div>
+      <div class="service-item">Вывоз авто после ДТП</div>
+    </div>
+  </section>
+
+  <!-- Цены -->
+  <section id="prices">
+    <h2>Цены на услуги</h2>
+    <p>Стоимость зависит от расстояния и типа автомобиля.</p>
+    <table>
+      <tr><th>Тип авто</th><th>Цена от (руб)</th></tr>
+      <tr><td>Легковой</td><td>1500</td></tr>
+      <tr><td>Внедорожник</td><td>2000</td></tr>
+      <tr><td>Грузовой</td><td>3000</td></tr>
+    </table>
+  </section>
+
+  <!-- Контакты -->
+  <section id="contacts">
+    <h2>Контакты</h2>
+    <p>Телефон: <a href="tel:+79991234567">+7 (999) 123-45-67</a></p>
+    <p>Адрес: г. Москва, ул. Примерная, 10</p>
+    <p>Email: info@evakuator24.ru</p>
+  </section>
+
+  <!-- Заявка -->
+  <section id="order">
+    <h2>Оформить заявку</h2>
+    <form id="orderForm">
+      <label>Имя:<input type="text" name="name" required></label>
+      <label>Телефон:<input type="tel" name="phone" required></label>
+      <label>Адрес эвакуации:<input type="text" name="address" required></label>
+      <label>Комментарий:<textarea name="comment"></textarea></label>
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
+
+  <!-- Подвал -->
+  <footer>
+    <p>© 2025 Эвакуатор 24. Все права защищены.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
